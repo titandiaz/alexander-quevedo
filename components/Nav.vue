@@ -1,14 +1,19 @@
 <template>
-  <section class="hero bg-banner is-large">
+  <section class="hero bg-banner is-large bg-img">
     <!-- Hero head: will stick at the top -->
     <div class="hero-head">
-      <header class="navbar">
+      <header class="navbar title-header">
         <div class="container">
           <div class="navbar-brand">
-            <a class="">
+            <nuxt-link
+              to="/"
+              class="logo-name"
+            >
               <h1 class="title logo-name">Alexander Quevedo</h1>
-            </a>
+            </nuxt-link>
             <span
+              ref="burger"
+              @click="toggle"
               class="navbar-burger burger"
               data-target="navbarMenuHeroC"
             >
@@ -20,17 +25,23 @@
           <div
             id="navbarMenuHeroC"
             class="navbar-menu"
+            ref="toggleMenu"
           >
             <div class="navbar-end">
-              <a class="navbar-item is-active">
-                Home
-              </a>
-              <a class="navbar-item">
-                Examples
-              </a>
-              <a class="navbar-item">
-                Documentation
-              </a>
+              <nuxt-link
+                to="/"
+                class="navbar-item is-active"
+              >
+                Inicio
+              </nuxt-link>
+              <nuxt-link
+                class="navbar-item"
+                to="/MyStory"
+              >Mi Historia</nuxt-link>
+              <nuxt-link
+                class="navbar-item"
+                to="/OurCity"
+              >Nuestra Ciudad</nuxt-link>
             </div>
           </div>
         </div>
@@ -38,28 +49,42 @@
     </div>
 
     <!-- Hero content: will be in the middle -->
-    <div class="hero-body">
-      <div class="container has-text-centered">
-        <h1 class="title">
-          Title
-        </h1>
-        <h2 class="subtitle">
-          Subtitle
-        </h2>
-      </div>
+    <div class="wrapper-slider">
+      <Swiper />
     </div>
   </section>
 </template>
 
 <script>
-export default {};
+import Swiper from "~/components/Banner";
+export default {
+  components: {
+    Swiper
+  },
+  methods: {
+    toggle() {
+      this.$refs.burger.classList.toggle("is-active");
+      this.$refs.toggleMenu.classList.toggle("is-active");
+    }
+  }
+};
 </script>
 
 <style>
 .logo-name {
   padding: 8px 12px;
+  color: #ffffff;
 }
 .bg-banner {
-  background-color: var(--verde);
+  background-color: var(--orange);
+}
+.bg-img {
+  background-image: url("../assets/img/personas2.jpg");
+  background-repeat: no-repeat, repeat;
+  background-position-y: 0%;
+  background-size: cover;
+}
+.wrapper-slider {
+  z-index: 0;
 }
 </style>

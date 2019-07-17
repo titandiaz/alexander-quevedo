@@ -1,14 +1,14 @@
 <template>
-  <div>
+  <div class="container-page">
     <nuxt />
   </div>
 </template>
 
 <style>
 :root {
-  --orange: #fc4a1a;
+  --orange: #f87218;
   --yellow: #f7b733;
-  --verde: #4abdac;
+  --green: #4abdac;
 }
 * {
   font-family: "Montserrat", sans-serif;

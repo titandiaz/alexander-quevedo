@@ -1,5 +1,5 @@
 <template>
-  <div class="columns is-mobile">
+  <div class="columns is-mobile yo-voto">
     <div class="column is-half is-4 box-voto">
       <h2 class="title-yo-voto">#Yo voto</h2>
       <div class="more">mas información</div>
@@ -16,7 +16,7 @@ export default {};
   margin: 0 auto;
   padding: 0.5rem 3rem;
   border-radius: 20px;
-  background-color: var(--orange);
+  background-color: var(--green);
   position: relative;
   top: -3rem;
 }

@@ -24,11 +24,14 @@ export default {
   ** Global CSS
   */
   css: [
+    'swiper/dist/css/swiper.css',
+    '~/assets/css/main.css'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/swiper.js', ssr: false },
   ],
   /*
   ** Nuxt.js modules

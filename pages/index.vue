@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="container-page">
     <Nav />
     <YoVoto />
   </div>
@@ -19,5 +19,5 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 </style>
