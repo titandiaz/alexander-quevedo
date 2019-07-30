@@ -2,7 +2,7 @@
   <div v-swiper:mySwiper="swiperOption">
     <div class="swiper-wrapper">
       <div class="center">
-        <img src="../assets/img/man.png">
+        <img src="../assets/img/banner.jpeg">
       </div>
     </div>
     <div class="swiper-pagination swiper-pagination-bullets"></div>
@@ -33,5 +33,9 @@ export default {
   width: 100vw;
   display: flex;
   justify-content: center;
+}
+.center img {
+  width: 100%;
+  object-fit: cover;
 }
 </style>

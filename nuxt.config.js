@@ -40,6 +40,10 @@ export default {
     // Doc:https://github.com/nuxt-community/modules/tree/master/packages/bulma
     '@nuxtjs/bulma',
   ],
+  server: {
+    port: 8000, // default: 3000
+    host: '0.0.0.0', // default: localhost
+  },
   /*
   ** Build configuration
   */

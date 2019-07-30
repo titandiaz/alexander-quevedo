@@ -1,5 +1,12 @@
+@import '../../static/fuente-icons/styles.css';
+:root {
+  --orange: #f15836;
+  --yellow: #f7b733;
+  --green: #4abdac;
+}
+
 .container-page {
-  transition: all 0.4s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .page-enter-active,
@@ -10,4 +17,34 @@
 .page-enter,
 .page-leave-active {
   opacity: 0;
+}
+.navbar {
+  box-shadow: 0 0 24px 12px rgba(28, 31, 44, 0.108);
+  position: absolute !important;
+  background-color: transparent !important;
+  width: 100%;
+}
+a.navbar-item:hover {
+  color: var(--orange) !important;
+  background-color: transparent !important;
+}
+.navbar-menu {
+  font-weight: 600 !important;
+}
+a.navbar-item:focus {
+  background-color: transparent !important;
+  color: var(--orange) !important;
+}
+.nuxt-link-exact-active {
+  color: var(--orange) !important;
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+    min-height: 5rem !important;
+  }
+}
+@media (max-width: 1024px) {
+  .navbar {
+    position: initial !important;
+  }
 }

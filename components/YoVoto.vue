@@ -18,7 +18,8 @@ export default {};
   border-radius: 20px;
   background-color: var(--green);
   position: relative;
-  top: -3rem;
+  /* top: -3rem; */
+  z-index: 99;
 }
 .title-yo-voto {
   font-weight: bold;
@@ -26,7 +27,12 @@ export default {};
   font-size: 3.8rem;
 }
 .more {
-  background-color: var(--yellow);
+  background: linear-gradient(
+    to right,
+    rgb(255, 59, 25) -17%,
+    rgba(255, 180, 51, 1) 50%,
+    rgba(0, 168, 0, 1) 98%
+  );
   color: #fff;
   display: inline-block;
   padding: 0.5rem 1rem;

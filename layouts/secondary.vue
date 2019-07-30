@@ -4,10 +4,10 @@
       <div class="container">
         <div class="navbar-brand">
           <nuxt-link
+            class="logo"
             to="/"
-            class="logo-name-two"
           >
-            <h1 class="title logo-name-two">Alexander Quevedo</h1>
+            <h1 class="logo-name-two">Alexander Quevedo</h1>
           </nuxt-link>
           <span
             @click="toggle"
@@ -30,19 +30,43 @@
               :key="index"
               :to="item.path"
               class="navbar-item"
-              :class="selected === index ? 'is-active' : ''"
-              @click="toggleItem(index)"
+              @click.native="toggleItem(index)"
             >{{item.name}}</nuxt-link>
+            <div class="navbar-item wrapper-icons-nav">
+              <a
+                href="#"
+                class="link"
+              >
+                <i class="icon-facebook"></i>
+              </a>
+              <a
+                href="#"
+                class="link"
+              >
+                <i class="icon-twitter"></i>
+              </a>
+              <a
+                href="#"
+                class="link"
+              >
+                <i class="icon-youtube-play"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </nav>
     <nuxt />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from "../components/Footer";
 export default {
+  components: {
+    Footer
+  },
   data() {
     return {
       nav: [
@@ -68,18 +92,14 @@ export default {
       this.$refs.toggleMenu.classList.toggle("is-active");
     },
     toggleItem(index) {
-      this.selected = index;
+      this.$refs.burger.classList.toggle("is-active");
+      this.$refs.toggleMenu.classList.toggle("is-active");
     }
   }
 };
 </script>
 
 <style>
-:root {
-  --orange: #f87218;
-  --yellow: #f7b733;
-  --green: #4abdac;
-}
 * {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
@@ -94,7 +114,31 @@ export default {
   margin: 0;
 }
 .logo-name-two {
-  padding: 8px 12px;
+  /* padding: 8px 12px; */
   color: #4a4a4a !important;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  margin-left: 12px;
+}
+.wrapper-icons-nav {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+.wrapper-icons-nav > a {
+  color: #4a4a4a;
+}
+.wrapper-icons-nav > a:hover {
+  color: var(--orange);
+}
+@media (max-width: 800px) {
+  .logo-name-two {
+    font-size: 1rem;
+    /* padding: 7px 12px; */
+  }
 }
 </style>
