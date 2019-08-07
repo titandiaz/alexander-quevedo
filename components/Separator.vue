@@ -1,23 +1,8 @@
 <template>
   <div class="separator">
     <div class="wrapper">
-      <h2>#Yo voto</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam enim dignissimos vero pariatur corporis odit cum consequuntur quas iste atque, minus sequi similique quos. Nihil assumenda qui voluptatum aspernatur eos.</p>
-      <!-- <div class="columns is-desktop">
-        <div class="column">
-          <h3>Title</h3>
-          <p class="description">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, natus tempore distinctio voluptatem odio consequuntur rerum consectetur laborum fuga repellendus corrupti possimus ipsam nam</p>
-        </div>
-        <div class="column">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, natus tempore distinctio voluptatem odio consequuntur rerum consectetur laborum fuga repellendus corrupti possimus ipsam nam</p>
-        </div>
-        <div class="column">
-          <h3>Title</h3>
-          <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, natus tempore distinctio voluptatem odio consequuntur rerum consectetur laborum fuga repellendus corrupti possimus ipsam nam</p>
-        </div>
-      </div> -->
-
+      <!-- <h2>Presentación</h2> -->
+      <p>Quiero lograr un municipio desarrollado, con oportunidades, que preserve el medio ambiente y mejore la calidad de vida de sus habitantes. Mi vida da fe de un compromiso social que me permite ser garantía de un cambio a la hora de gobernar, donde no cabe oportunidad a la corrupción, a la improvisación o al desorden administrativo; la eficiencia en los procesos, gestión y articulación interinstitucional serán pilares de nuestra administración municipal</p>
     </div>
   </div>
 </template>

@@ -8,8 +8,9 @@
       <p class="copy">&copy; copyright 2019 - Hecho con <i class="heart icon-heart"></i> por sublimax.com</p>
       <div class="wrapper-icons">
         <a
-          href="#"
+          href="https://www.facebook.com/Alexander-Quevedo-349850775734108/"
           class="link"
+          target="_blank"
         >
           <i class="icon-facebook"></i>
         </a>

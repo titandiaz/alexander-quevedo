@@ -34,8 +34,9 @@
             >{{item.name}}</nuxt-link>
             <div class="navbar-item wrapper-icons-nav">
               <a
-                href="#"
+                href="https://www.facebook.com/Alexander-Quevedo-349850775734108/"
                 class="link"
+                target="_blank"
               >
                 <i class="icon-facebook"></i>
               </a>
@@ -76,11 +77,15 @@ export default {
         },
         {
           path: "MyStory",
-          name: "Mi Historia"
+          name: "Quién Soy?"
         },
         {
           path: "OurCity",
-          name: "Nuestra Ciudad"
+          name: "Plan de Gobierno"
+        },
+        {
+          path: "OurCity",
+          name: "Gestión en la Asamblea"
         }
       ],
       selected: 0

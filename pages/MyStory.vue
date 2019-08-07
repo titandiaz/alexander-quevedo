@@ -1,12 +1,14 @@
 <template>
   <div class="container-page">
-    <span>mi historia</span>
-    <ul>
-      <li>hola</li>
-      <li>hola</li>
-      <li>hola</li>
-      <li>hola</li>
-    </ul>
+    <div class="wrapper-my-story">
+      <span>mi historia</span>
+      <ul>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+        <li>hola</li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -17,6 +19,9 @@ export default {
 </script>
 
 <style scoped>
+.wrapper-my-story {
+  padding-top: 80px;
+}
 h1 {
   color: black !important;
   font-size: 45px;
